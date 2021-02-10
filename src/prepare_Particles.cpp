@@ -2,12 +2,12 @@
 #include "Particle.h"
 #include <iostream>
 
-void prepare_Particles(std::list <struct Particle> & Particle_List, const Eigen::MatrixXd & A, const Eigen::MatrixXd & C, const Eigen::MatrixXd & Sigma_Inn_contribution, const Eigen::MatrixXd & Sigma_Add_contribution)
+void prepare_Particles(std::list <Particle> & Particle_List, const Eigen::MatrixXd & A, const Eigen::MatrixXd & C, const Eigen::MatrixXd & Sigma_Inn_contribution, const Eigen::MatrixXd & Sigma_Add_contribution)
 {
 
 	// This can be optimised further!
 
-	std::list<struct Particle>::iterator it_Particle;
+	std::list<Particle>::iterator it_Particle;
 
 	for (it_Particle  = Particle_List.begin(); it_Particle != Particle_List.end(); ++it_Particle)
 	{

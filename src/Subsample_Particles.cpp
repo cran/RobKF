@@ -5,7 +5,7 @@
 
 using namespace std;
 
-std::list < struct Particle > Subsample_Particles(std::list < struct Particle > & candidates, const int &N)
+std::list <Particle > Subsample_Particles(std::list <Particle > & candidates, const int &N)
 {
 
 	

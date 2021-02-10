@@ -2,7 +2,7 @@
 #include "Particle.h"
 #include <iostream>
 
-void update_Particle(struct Particle & Sampled_Particle, const Eigen::MatrixXd & A, const Eigen::MatrixXd & C, const Eigen::MatrixXd & Sigma_Inn, const Eigen::MatrixXd & Sigma_Add, std::list<Eigen::MatrixXd> Y)
+void update_Particle(Particle & Sampled_Particle, const Eigen::MatrixXd & A, const Eigen::MatrixXd & C, const Eigen::MatrixXd & Sigma_Inn, const Eigen::MatrixXd & Sigma_Add, std::list<Eigen::MatrixXd> Y)
 {
 
 	int ii;

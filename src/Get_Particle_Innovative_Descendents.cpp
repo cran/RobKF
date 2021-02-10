@@ -2,12 +2,12 @@
 #include <RcppEigen.h>
 #include <iostream>
 
-std::list < struct Particle > Get_Particle_Innovative_Descendents(const struct Particle & Ancestor, const Eigen::MatrixXd & relevant_Y, const Eigen::MatrixXd & C_Augmented, const std::vector < double > & sigma_hat, 
+std::list <Particle > Get_Particle_Innovative_Descendents(Particle & Ancestor, const Eigen::MatrixXd & relevant_Y, const Eigen::MatrixXd & C_Augmented, const std::vector < double > & sigma_hat, 
 const Eigen::MatrixXd & Sigma_Inn, int Number, double s, const std::vector <double> & General_Weights, const std::vector <int> & Sample_From, const int & horizon)
 {
 
-	std::list < struct Particle > Output;
-	std::list < struct Particle > Additions;
+	std::list <Particle > Output;
+	std::list <Particle > Additions;
 
 	Eigen::MatrixXd Residual        = relevant_Y - Ancestor.obs_Pred;
 	Eigen::MatrixXd Pre_Denominator = C_Augmented.transpose() * Ancestor.obs_Prec * C_Augmented;

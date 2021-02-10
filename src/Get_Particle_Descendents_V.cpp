@@ -3,11 +3,11 @@
 #include <R.h>
 #include <iostream>
 
-std::list < struct Particle > Get_Particle_Descendents_V(const struct Particle & Ancestor, int ii, int Number, double likelihood, const double & sigma_tilde, double Sigma_Add_comp, double Numerator, double Denominator, 
+std::list <Particle > Get_Particle_Descendents_V(Particle & Ancestor, int ii, int Number, double likelihood, const double & sigma_tilde, double Sigma_Add_comp, double Numerator, double Denominator, 
 double s, double General_weight)
 {
 
-	std::list < struct Particle > out;
+	std::list < Particle > out;
 
 	double sampled_scale, Common_weight, specific_weight, parameter, tmp, factor;
 
