@@ -6,6 +6,11 @@
 
 using namespace Rcpp;
 
+#ifdef RCPP_USE_GLOBAL_ROSTREAM
+Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
+Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
+#endif
+
 // Robust_filter
 std::list< std::list <  std::list < Eigen::MatrixXd > > > Robust_filter(const std::list<std::list<Eigen::MatrixXd> >& Y_expanded, const std::list<Eigen::MatrixXd>& C_list, const std::list<Eigen::MatrixXd>& Sigma_Add_list, const std::list<Eigen::MatrixXd>& Sigma_Inn_Contribution, const Eigen::MatrixXd& A, const Eigen::MatrixXd& Sigma_Inn, const Eigen::MatrixXd& Sigma_Add, const double& s, const int& Num_Descendents, const int& Num_Particles, const std::list<std::vector<int> >& to_sample, const std::vector<int>& Number_of_resamples, const std::vector<double>& sigma_tilde, const std::vector<double>& sigma_hat, const Eigen::MatrixXd& mu_0, const Eigen::MatrixXd& Sigma_0, const int& horizon, const std::vector <double>& prob_inn, const std::vector <double>& prob_add, int Particle_Number, const std::list<Eigen::MatrixXd>& Y_Full_list);
 RcppExport SEXP _RobKF_Robust_filter(SEXP Y_expandedSEXP, SEXP C_listSEXP, SEXP Sigma_Add_listSEXP, SEXP Sigma_Inn_ContributionSEXP, SEXP ASEXP, SEXP Sigma_InnSEXP, SEXP Sigma_AddSEXP, SEXP sSEXP, SEXP Num_DescendentsSEXP, SEXP Num_ParticlesSEXP, SEXP to_sampleSEXP, SEXP Number_of_resamplesSEXP, SEXP sigma_tildeSEXP, SEXP sigma_hatSEXP, SEXP mu_0SEXP, SEXP Sigma_0SEXP, SEXP horizonSEXP, SEXP prob_innSEXP, SEXP prob_addSEXP, SEXP Particle_NumberSEXP, SEXP Y_Full_listSEXP) {

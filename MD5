@@ -1,4 +1,4 @@
-a3aa83b10b8a097e77d3021b57591187 *DESCRIPTION
+1fcb6b38e64fc857ba6bef5e3dd559db *DESCRIPTION
 1a83020672042fc11549de9f58cf3492 *NAMESPACE
 8616a9352e62eaac931471883b1214fc *R/AORKF_huber.R
 98add7915fb3a420a44d72428362cda8 *R/AORKF_t.R
@@ -19,7 +19,7 @@ cf34c279c2759f54929160941dd56c46 *R/Extract_all_anomalies.R
 e381eb108fe1e3f3ac9a78ed48389a8e *R/summary.ioaorkf.R
 e3f0729723245f1962df37d73e681cd5 *R/summary.rkf.R
 3d2d3fa5674bf58d8dc5554e0cf3f5ec *README.md
-0a6acf67bdd798608e186b779a4a243d *build/partial.rdb
+87b5849c710f5e057c4447d20a0e3e4d *build/partial.rdb
 2c6148840a14318385d3e4f083ea764a *inst/REFERENCES.bib
 d19efd90e9011201a62a0ee90bc55e71 *man/AORKF_huber.Rd
 7bded35c9d3ec5467f94154dacf456d7 *man/AORKF_t.Rd
@@ -41,7 +41,7 @@ f9e121053218b98310e22fd789d07016 *src/Kalman_filter.cpp
 cebfb1cc7d8445621f9ac680a54baae2 *src/Kalman_step.cpp
 0fe7830a73022819225303d4593728a6 *src/Particle.cpp
 ac9991b39751d9702518c51e149b3b75 *src/Particle.h
-c12fcc1e643e39c1deeef199954489e5 *src/RcppExports.cpp
+15d3aed93e83edf4aea5af98eb675561 *src/RcppExports.cpp
 34eb72119cf72249a41e22f068a990c7 *src/Robust_filter.cpp
 1c83f7015e53b8ebfaa2626a0f7f4e90 *src/Sigma_limit.cpp
 3adb14d57bd5b2b80566a1e5320fec27 *src/Subsample_Particles.cpp
